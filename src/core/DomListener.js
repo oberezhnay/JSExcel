@@ -18,9 +18,6 @@ export class DomListener {
             `Method ${method} is not implemented in ${name} Component`
         )
       }
-      // // eslint-disable-next-line no-debugger
-      // debugger
-      // console.log(this, method)
       // тоже самое что addEventListener
       this[method] = this[method].bind(this)
       this.$root.on(listener, this[method])
@@ -30,7 +27,6 @@ export class DomListener {
   removeDOMListeners() {
     this.listeners.forEach(listener => {
       const method = getMethodName(listener)
-      console.log(this, method)
       this.$root.off(listener, this[method])
     })
   }
