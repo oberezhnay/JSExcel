@@ -1,4 +1,4 @@
-import {capitalize} from '@core/utils';
+import {capitalize} from '@core/utils'
 
 export class DomListener {
   constructor($root, listeners = []) {
@@ -21,7 +21,7 @@ export class DomListener {
       // тоже самое что addEventListener
       this[method] = this[method].bind(this)
       this.$root.on(listener, this[method])
-    });
+    })
   }
 
   removeDOMListeners() {
