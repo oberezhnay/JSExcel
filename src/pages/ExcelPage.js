@@ -1,6 +1,6 @@
 import {Excel} from '../components/excel/Excel'
 import {Page} from '../core/page'
-import {createStore} from '../core/createStore'
+import {createStore} from '../core/store/createStore'
 import {normalizeInitialState} from '../redux/initialState'
 import {rootReducer} from '../redux/rootReducer'
 import {debounce, storage} from '../core/utils'
