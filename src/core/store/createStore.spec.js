@@ -10,7 +10,7 @@ const reducer = (state = initialState, action) => {
   return state
 }
 
-describe('createStore', () => {
+describe('createStore:', () => {
   let store
   let handler
 
@@ -20,10 +20,10 @@ describe('createStore', () => {
   })
 
   test('should return store object', () => {
-    expect(store).toBeDefined
-    expect(store.dispatch).toBeDefined
-    expect(store.subscribe).toBeDefined
-    expect(store.getState).not.toBeUndefined
+    expect(store).toBeDefined()
+    expect(store.dispatch).toBeDefined()
+    expect(store.subscribe).toBeDefined()
+    expect(store.getState).not.toBeUndefined()
   })
 
   test('should return object as a state', () => {
